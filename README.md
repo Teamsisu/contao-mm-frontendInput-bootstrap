@@ -9,7 +9,7 @@ How to use it.
 
 Currently the extension is only available over composer add following package to your composer.json
 
-* teamsisu/contao-mm-frontendInput-bootstrap
+* teamsisu/contao-mm-frontend-input-bootstrap
 
 
 Additional note

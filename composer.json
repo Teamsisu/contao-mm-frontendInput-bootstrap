@@ -1,5 +1,5 @@
 {
-    "name": "teamsisu/contao-mm-frontendInput-bootstrap",
+    "name": "teamsisu/contao-mm-frontend-input-bootstrap",
     "description": "Creates specific frontend form widgets to use with contao-bootstrap",
     "keywords": ["contao", "metamodels", "frontend","form","bootstrap"],
     "type": "contao-module",
@@ -22,7 +22,7 @@
         "php": ">=5.3",
         "contao/core": ">=3.3,<4.0",
         "metamodels/core":"dev-tng",
-        "contao-mm-frontendInput": "dev-develop",
+        "teamsisu/contao-mm-frontend-input": "dev-develop",
         "netzmacht/contao-bootstrap": ">=0.2.7"
     },
     "autoload": {
