@@ -1,6 +1,8 @@
 MetaModels Frontend Input Bootstrap
 =======================
 
+[![Version](http://img.shields.io/packagist/v/teamsisu/contao-mm-frontend-input-bootstrap.svg?style=flat-square)](https://github.com/Teamsisu/contao-mm-frontendInput-bootstrap)
+
 Creates specific frontend form widgets to use with contao-bootstrap
 
 
