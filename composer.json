@@ -1,0 +1,45 @@
+{
+    "name": "teamsisu/contao-mm-frontendInput-bootstrap",
+    "description": "Creates specific frontend form widgets to use with contao-bootstrap",
+    "keywords": ["contao", "metamodels", "frontend","form","bootstrap"],
+    "type": "contao-module",
+    "homepage": "https://github.com/Teamsisu/contao-mm-frontendInput-bootstrap",
+    "license": "LGPL-3.0+",
+    "authors": [
+        {
+            "name": "Martin Treml",
+            "email": "martin.treml@teamsisu.at",
+            "homepage": "http://www.teamsisu.at",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/Teamsisu/contao-mm-frontendInput-bootstrap/issues",
+        "irc": "irc://irc.freenode.org/contao.mm",
+        "source": "https://github.com/Teamsisu/contao-mm-frontendInput-bootstrap"
+    },
+    "require": {
+        "php": ">=5.3",
+        "contao/core": ">=3.3,<4.0",
+        "metamodels/core":"dev-tng",
+        "contao-mm-frontendInput": "dev-develop",
+        "netzmacht/contao-bootstrap": ">=0.2.7"
+    },
+    "autoload": {
+        "psr-0": {
+            "Teamsisu\\MetaModelsFrontendInputBootstrap": "src"
+        }
+    },
+    "extra": {
+        "contao": {
+            "sources": {
+                "contao": "system/modules/contao-mm-frontendInput-bootstrap"
+            }
+        },
+        "branch-alias": {
+            "dev-tng": "2.0.x-dev"
+        }
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
