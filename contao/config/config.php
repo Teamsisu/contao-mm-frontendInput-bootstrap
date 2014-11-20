@@ -17,17 +17,9 @@
 /**
  * Change the form field to the new Bootstrap version
  */
-<<<<<<< HEAD
-$GLOBALS['TL_FFL']['url'] = 'Teamsisu\MetaModelsFrontendInputBootstrap\FrontendIntegration\Form\FormURLField';
-=======
 $GLOBALS['TL_FFL']['beUrl'] = 'Teamsisu\MetaModelsFrontendInputBootstrap\FrontendIntegration\Form\FormURLField';
->>>>>>> master
 
 /**
  * Disable the creation of an form-control wrapper
  */
-<<<<<<< HEAD
-$GLOBALS['BOOTSTRAP']['form']['widgets']['url']['noFormControl'] = true;
-=======
 $GLOBALS['BOOTSTRAP']['form']['widgets']['beUrl']['noFormControl'] = true;
->>>>>>> master
