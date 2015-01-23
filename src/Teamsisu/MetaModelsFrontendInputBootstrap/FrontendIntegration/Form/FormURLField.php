@@ -54,6 +54,7 @@ class FormURLField extends BaseFormURLField implements GeneratesAnElement
         }
 
         if ($this->multiple) {
+            $titleContainer = Element::create('div')->setAttribute('class', array('form-group title_container'));
             $titleInput = Element::create('input', $this->arrAttributes)
                 ->setId('title_' . $this->strId)
                 ->addAttributes(
@@ -64,7 +65,10 @@ class FormURLField extends BaseFormURLField implements GeneratesAnElement
                         'name'  => $this->strName . '[0]'
                     )
                 );
-            $container->addChild($titleInput);
+            $hrefLabel = Element::create('label')->setAttribute('for', 'title_' . $this->strId)->addChild('Title');
+            $titleContainer->addChild($hrefLabel);
+            $titleContainer->addChild($titleInput);
+            $container->addChild($titleContainer);
         }
 
         $hrefInput = Element::create('input', $this->arrAttributes)
@@ -77,10 +81,14 @@ class FormURLField extends BaseFormURLField implements GeneratesAnElement
                     'name'  => $this->strName . '[1]'
                 )
             );
-        $container->addChild($hrefInput);
 
-        $label = specialchars($this->slabel);
-        $container->addChild($label);
+        $hrefContainer = Element::create('div')->setAttribute('class', array('form-group href_container'));
+        $hrefLabel = Element::create('label')->setAttribute('for', 'href_' . $this->strId)->addChild('Link');
+        $hrefContainer->addChild($hrefLabel);
+        $hrefContainer->addChild($hrefInput);
+        $container->addChild($hrefContainer);
+
+        $container->addChild(Element::create('div')->setAttribute('class', array('clearfix')));
 
         return $container;
 
